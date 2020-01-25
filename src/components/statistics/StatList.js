@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styles from "./StatList.module.css";
 
 const StatList = ({ items = [] }) => (
-  <ul className="stat-list">
+  <ul className={styles.statList}>
     {items.map(item => (
-      <li key={item.id} className="item">
-        <span className="label"> {item.label}</span>
-        <span className="percentage"> {item.percentage}%</span>
+      <li key={item.id} className={styles.item}>
+        <span className={styles.label}> {item.label}</span>
+        <span className={styles.percentage}> {item.percentage}%</span>
       </li>
     ))}
   </ul>

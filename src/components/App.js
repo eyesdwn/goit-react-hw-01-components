@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
 import Profile from "./profile/Profile";
-import user from "../user.json.js";
+import user from "../user.json";
 import Statistics from "./statistics/Statistics";
-import statisticalData from "../statistical-data.json.js";
+import statisticalData from "../statistical-data.json";
 import FriendList from "./friendList/FriendList";
-import friends from "../friends.json.js";
+import friends from "../friends.json";
 import TransactionHistory from "./transactions/TransactionHistory";
-import transactions from "../transactions.json.js";
+import transactions from "../transactions.json";
 
 const App = () => (
   <Fragment>

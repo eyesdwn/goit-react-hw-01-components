@@ -1,11 +1,12 @@
 import React from "react";
-import transactions from "../../transactions.json.js";
+import transactions from "../../transactions.json";
 import TableRow from "./TableRow";
+import styles from "./TransactionHistory.module.css";
 
 const TransactionHistory = () => (
-  <table className="transaction-history">
-    <thead>
-      <tr>
+  <table className={styles.transactionHistory}>
+    <thead className={styles.tHead}>
+      <tr className={styles.tRow}>
         <th>Type</th>
         <th>Amount</th>
         <th>Currency</th>

@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styles from "./TableRow.module.css";
 
 const TableRow = ({ items = [] }) =>
   items.map(item => (
     <tr key={item.id}>
-      <td>{item.type}</td>
-      <td>{item.amount}</td>
-      <td>{item.currency}</td>
+      <td className={styles.tData}>{item.type}</td>
+      <td className={styles.tData}>{item.amount}</td>
+      <td className={styles.tData}>{item.currency}</td>
     </tr>
   ));
 
